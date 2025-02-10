@@ -31,14 +31,15 @@
 
         <div class="navbar max-w-[1440px] mx-auto border-t border-black">
             <div role="tablist" class="tabs tabs-boxed tabs-lg flex gap-6 mx-auto ">
-                <a role="tab" class="tab border border-black">Donation</a>
-                <a role="tab" class="tab border border-black tab-active text-white font-semibold">History</a>
+                <a id="donation_btn" role="tab" class="tab border border-black tab-active text-white font-semibold">Donation</a>
+                <a id="history_btn" role="tab" class="tab border border-black ">History</a>
             </div>
         </div>
     </nav>
 
     <main class=" mt-36 px-3 max-w-[1280px] mx-auto">
-        <div id="donation-tab" class="">
+        <div id="donation-tab" class="my-4">
+            <!-- flood donation -->
             <div class="card md:card-side max-w-lg md:max-w-7xl border bg-base-100 shadow-xl mx-auto my-4 p-6">
                 <figure class="md:w-1/2">
                     <img src="./assets/noakhali.png" alt="Album" />
@@ -46,22 +47,22 @@
                 <div class="card-body p-1 pt-8 md:p-1 md:pl-6 md:w-1/2">
                     <div class="border w-fit p-2 rounded-md flex items-center gap-2">
                         <img src="./assets/coin.png" alt="">
-                        <p><span id="landslide_total_Donation">10000</span> BDT</p>
+                        <p><span id="flood_total_Donation">10000</span> BDT</p>
                     </div>
 
                     <h2 class="card-title font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <label for="donation_amount" class="my-2 p-1">
-                        <input type="text" class="border w-full py-2 px-4 rounded-lg" placeholder="Write Donation Amount">
-                    </label>
-                    <div class="card-actions justify-center md:justify-start">
-                        <button class="btn btn-primary btn-wide text-xl font-bold">Donate Now</button>
-                    </div>
 
-                    
+                    <form action="" class="w-full mt-2 px-auto">
+                        <label for="donation_amount" class="my-3 ">
+                            <input id="flood_donation_amount" type="text" class="border w-full py-2 px-4 rounded-lg" placeholder="Write Donation Amount" required>
+                        </label>
+                        <button id="flood_donate_btn" class="btn btn-primary w-full mt-5 text-xl font-bold">Donate Now</button>
+                    </form>
                 </div>
             </div>
             
+            <!-- landslid donation -->
             <div class="card md:card-side max-w-lg md:max-w-7xl border bg-base-100 shadow-xl mx-auto my-4 p-6">
                 <figure class="md:w-1/2">
                     <img src="./assets/londslide.jpg" alt="Album" />
@@ -74,17 +75,17 @@
 
                     <h2 class="card-title font-bold">Rebuild Lives After Deadly Landslides</h2>
                     <p> Continuous heavy rainfall has triggered massive landslides, burying homes and endangering lives. Families have lost everything and are in dire need of shelter, food, and medical assistance. Your generous donation will help rescue efforts, provide medical aid, and support long-term rebuilding to restore normalcy for those affected.</p>
-                    <label for="donation_amount" class="my-2 p-1">
-                        <input type="text" class="border w-full py-2 px-4 rounded-lg" placeholder="Write Donation Amount">
-                    </label>
-                    <div class="card-actions justify-center md:justify-start">
-                        <button class="btn btn-primary btn-wide text-xl font-bold">Donate Now</button>
-                    </div>
 
-                    
+                    <form action="" class="w-full mt-2 px-auto">
+                        <label for="donation_amount" class="my-3 ">
+                            <input id="landslide_donation_amount" type="text" class="border w-full py-2 px-4 rounded-lg" placeholder="Write Donation Amount" required>
+                        </label>
+                        <button id="landslide_donate_btn" class="btn btn-primary w-full mt-5 text-xl font-bold">Donate Now</button>
+                    </form>
                 </div>
             </div>
 
+            <!-- cyclone donation -->
             <div class="card md:card-side max-w-lg md:max-w-7xl border bg-base-100 shadow-xl mx-auto my-4 p-6">
                 <figure class="md:w-1/2">
                     <img src="./assets/cyclone.jpg" alt="Album" />
@@ -92,27 +93,28 @@
                 <div class="card-body p-1 pt-8 md:p-1 md:pl-6 md:w-1/2">
                     <div class="border w-fit p-2 rounded-md flex items-center gap-2">
                         <img src="./assets/coin.png" alt="">
-                        <p><span id="landslide_total_Donation">10000</span> BDT</p>
+                        <p><span id="cyclone_total_Donation">10000</span> BDT</p>
                     </div>
 
                     <h2 class="card-title font-bold">Support Cyclone Victims in Chittagong</h2>
                     <p> Cyclone Dana has caused severe devastation, displacing families, destroying homes, and cutting off access to essential resources. Survivors are in desperate need of food, medical care, and safe shelter. With your support, we can provide immediate relief, rebuild homes, and help affected communities recover from this disaster.</p>
-                    <label for="donation_amount" class="my-2 p-1">
-                        <input type="text" class="border w-full py-2 px-4 rounded-lg" placeholder="Write Donation Amount">
-                    </label>
-                    <div class="card-actions justify-center md:justify-start">
-                        <button class="btn btn-primary btn-wide text-xl font-bold">Donate Now</button>
-                    </div>
 
-                    
+                    <form action="" class="w-full mt-2 px-auto">
+                        <label for="donation_amount" class="my-3 ">
+                            <input id="cyclone_donation_amount" type="text" class="border w-full py-2 px-4 rounded-lg" placeholder="Write Donation Amount" required>
+                        </label>
+                        <button id="cyclone_donate_btn" class="btn btn-primary w-full mt-5 text-xl font-bold">Donate Now</button>
+                    </form>
                 </div>
             </div>
 
         </div>
 
-        <div id="history-tab" class="border hidden h-screen">
-
+        <div id="history-tab" class="border hidden">
+            <h1>no history</h1>
         </div>
     </main>
+    <script src="index.js"></script>
+
 </body>
 </html>
