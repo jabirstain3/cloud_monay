@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="relative">
-    <nav class="fixed w-full ">
+    <nav class="fixed w-full z-10 top-0 bg-white">
         <div class="navbar max-w-[1440px] mx-auto ">
             <div class="navbar-start">
                 <a id="bolg_link" href="blog.html" class="btn btn-primary text-xl text-white">Blog</a>
@@ -18,10 +18,10 @@
 
             <div class="navbar-center flex items-center gap-2">
                 <img src="./assets/logo.png" alt="">
-                <p class="text-2xl font-bold">Cloud Donation</p>
+                <p class="text-2xl font-bold hidden sm:block ">Cloud Donation</p>
             </div>
 
-            <div class="navbar-end mx-2">
+            <div class="navbar-end">
                 <div class="border p-2 rounded-md flex items-center gap-2">
                     <img src="./assets/coin.png" alt="">
                     <p><span id="total_balance">10000</span> BDT</p>
@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <div class="navbar max-w-[1440px] mx-auto border border-t-black">
+        <div class="navbar max-w-[1440px] mx-auto border-t border-black">
             <div role="tablist" class="tabs tabs-boxed tabs-lg flex gap-6 mx-auto ">
                 <a role="tab" class="tab border border-black">Donation</a>
                 <a role="tab" class="tab border border-black tab-active text-white font-semibold">History</a>
@@ -37,5 +37,82 @@
         </div>
     </nav>
 
+    <main class=" mt-36 px-3 max-w-[1280px] mx-auto">
+        <div id="donation-tab" class="">
+            <div class="card md:card-side max-w-lg md:max-w-7xl border bg-base-100 shadow-xl mx-auto my-4 p-6">
+                <figure class="md:w-1/2">
+                    <img src="./assets/noakhali.png" alt="Album" />
+                </figure>
+                <div class="card-body p-1 pt-8 md:p-1 md:pl-6 md:w-1/2">
+                    <div class="border w-fit p-2 rounded-md flex items-center gap-2">
+                        <img src="./assets/coin.png" alt="">
+                        <p><span id="landslide_total_Donation">10000</span> BDT</p>
+                    </div>
+
+                    <h2 class="card-title font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                    <label for="donation_amount" class="my-2 p-1">
+                        <input type="text" class="border w-full py-2 px-4 rounded-lg" placeholder="Write Donation Amount">
+                    </label>
+                    <div class="card-actions justify-center md:justify-start">
+                        <button class="btn btn-primary btn-wide text-xl font-bold">Donate Now</button>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="card md:card-side max-w-lg md:max-w-7xl border bg-base-100 shadow-xl mx-auto my-4 p-6">
+                <figure class="md:w-1/2">
+                    <img src="./assets/londslide.jpg" alt="Album" />
+                </figure>
+                <div class="card-body p-1 pt-8 md:p-1 md:pl-6 md:w-1/2">
+                    <div class="border w-fit p-2 rounded-md flex items-center gap-2">
+                        <img src="./assets/coin.png" alt="">
+                        <p><span id="landslide_total_Donation">10000</span> BDT</p>
+                    </div>
+
+                    <h2 class="card-title font-bold">Rebuild Lives After Deadly Landslides</h2>
+                    <p> Continuous heavy rainfall has triggered massive landslides, burying homes and endangering lives. Families have lost everything and are in dire need of shelter, food, and medical assistance. Your generous donation will help rescue efforts, provide medical aid, and support long-term rebuilding to restore normalcy for those affected.</p>
+                    <label for="donation_amount" class="my-2 p-1">
+                        <input type="text" class="border w-full py-2 px-4 rounded-lg" placeholder="Write Donation Amount">
+                    </label>
+                    <div class="card-actions justify-center md:justify-start">
+                        <button class="btn btn-primary btn-wide text-xl font-bold">Donate Now</button>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <div class="card md:card-side max-w-lg md:max-w-7xl border bg-base-100 shadow-xl mx-auto my-4 p-6">
+                <figure class="md:w-1/2">
+                    <img src="./assets/cyclone.jpg" alt="Album" />
+                </figure>
+                <div class="card-body p-1 pt-8 md:p-1 md:pl-6 md:w-1/2">
+                    <div class="border w-fit p-2 rounded-md flex items-center gap-2">
+                        <img src="./assets/coin.png" alt="">
+                        <p><span id="landslide_total_Donation">10000</span> BDT</p>
+                    </div>
+
+                    <h2 class="card-title font-bold">Support Cyclone Victims in Chittagong</h2>
+                    <p> Cyclone Dana has caused severe devastation, displacing families, destroying homes, and cutting off access to essential resources. Survivors are in desperate need of food, medical care, and safe shelter. With your support, we can provide immediate relief, rebuild homes, and help affected communities recover from this disaster.</p>
+                    <label for="donation_amount" class="my-2 p-1">
+                        <input type="text" class="border w-full py-2 px-4 rounded-lg" placeholder="Write Donation Amount">
+                    </label>
+                    <div class="card-actions justify-center md:justify-start">
+                        <button class="btn btn-primary btn-wide text-xl font-bold">Donate Now</button>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div id="history-tab" class="border hidden h-screen">
+
+        </div>
+    </main>
 </body>
 </html>
