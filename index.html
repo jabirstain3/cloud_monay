@@ -29,18 +29,18 @@
             </div>
         </div>
 
-        <div class="navbar max-w-[1440px] mx-auto border-t border-black">
-            <div role="tablist" class="tabs tabs-boxed tabs-lg flex gap-6 mx-auto ">
+        <div class="navbar max-w-[1440px] mx-auto border-t bg-neutral-100 border-black">
+            <div role="tablist" class="tabs tabs-boxed tabs-lg flex gap-10 mx-auto ">
                 <a id="donation_btn" role="tab" class="tab border border-black tab-active text-white font-semibold">Donation</a>
                 <a id="history_btn" role="tab" class="tab border border-black ">History</a>
             </div>
         </div>
     </nav>
 
-    <main class=" mt-36 px-3 max-w-[1280px] mx-auto">
-        <div id="donation-tab" class="my-4">
+    <main class=" mt-40 px-3 max-w-[1280px] mx-auto">
+        <div id="donation-tab" class=" my-4 px-4 rounded-md">
             <!-- flood donation -->
-            <div class="card md:card-side max-w-lg md:max-w-7xl border bg-base-100 shadow-xl mx-auto my-4 p-6">
+            <div class="card md:card-side max-w-lg md:max-w-7xl border bg-neutral-100 shadow-xl mx-auto my-4 p-6">
                 <figure class="md:w-1/2">
                     <img src="./assets/noakhali.png" alt="Album" />
                 </figure>
@@ -50,7 +50,7 @@
                         <p><span id="flood_total_Donation">10000</span> BDT</p>
                     </div>
 
-                    <h2 class="card-title font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 id="flood-title" class="card-title font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
                     <form action="" class="w-full mt-2 px-auto">
@@ -63,7 +63,7 @@
             </div>
             
             <!-- landslid donation -->
-            <div class="card md:card-side max-w-lg md:max-w-7xl border bg-base-100 shadow-xl mx-auto my-4 p-6">
+            <div class="card md:card-side max-w-lg md:max-w-7xl border bg-neutral-100 shadow-xl mx-auto my-4 p-6">
                 <figure class="md:w-1/2">
                     <img src="./assets/londslide.jpg" alt="Album" />
                 </figure>
@@ -73,7 +73,7 @@
                         <p><span id="landslide_total_Donation">10000</span> BDT</p>
                     </div>
 
-                    <h2 class="card-title font-bold">Rebuild Lives After Deadly Landslides</h2>
+                    <h2 id="landslide-title" class="card-title font-bold">Rebuild Lives After Deadly Landslides</h2>
                     <p> Continuous heavy rainfall has triggered massive landslides, burying homes and endangering lives. Families have lost everything and are in dire need of shelter, food, and medical assistance. Your generous donation will help rescue efforts, provide medical aid, and support long-term rebuilding to restore normalcy for those affected.</p>
 
                     <form action="" class="w-full mt-2 px-auto">
@@ -86,7 +86,7 @@
             </div>
 
             <!-- cyclone donation -->
-            <div class="card md:card-side max-w-lg md:max-w-7xl border bg-base-100 shadow-xl mx-auto my-4 p-6">
+            <div class="card md:card-side max-w-lg md:max-w-7xl border bg-neutral-100 shadow-xl mx-auto my-4 p-6">
                 <figure class="md:w-1/2">
                     <img src="./assets/cyclone.jpg" alt="Album" />
                 </figure>
@@ -96,7 +96,7 @@
                         <p><span id="cyclone_total_Donation">10000</span> BDT</p>
                     </div>
 
-                    <h2 class="card-title font-bold">Support Cyclone Victims in Chittagong</h2>
+                    <h2 id="cyclone-title" class="card-title font-bold">Support Cyclone Victims in Chittagong</h2>
                     <p> Cyclone Dana has caused severe devastation, displacing families, destroying homes, and cutting off access to essential resources. Survivors are in desperate need of food, medical care, and safe shelter. With your support, we can provide immediate relief, rebuild homes, and help affected communities recover from this disaster.</p>
 
                     <form action="" class="w-full mt-2 px-auto">
@@ -121,11 +121,11 @@
             </dialog>
         </div>
 
-        <div id="history-tab" class="border hidden">
-            <h1>no history</h1>
+        <div id="history-tab" class="hidden">
+            <div id="history container" class="max-w-5xl mx-auto my-4 px-4">
+            </div>
         </div>
     </main>
     <script src="index.js"></script>
-
 </body>
 </html>
